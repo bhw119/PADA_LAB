@@ -1,7 +1,10 @@
 # PADA_LAB
 
-### DATA Preprocessing git
-- Sentiment: BERT모델을 통한 pre-train 모델 혹은 감정의 원주율 모델 사용 논의 후 결정 : **필규 희령** 
+## DATA Preprocessing git
+
+### 희령 필규
+- Sentiment: BERT모델을 통한 pre-train 모델 혹은 감정의 원주율 모델 사용 논의 후 결정
+### 현우, 수진
 
 - Length (Review Text, Review title): 단어수
 
