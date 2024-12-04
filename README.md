@@ -1,12 +1,11 @@
 # PADA_LAB
 
 ### DATA Preprocessing git
+- Sentiment: BERT모델을 통한 pre-train 모델 혹은 감정의 원주율 모델 사용 논의 후 결정 : **필규 희령** 
 
 - Length (Review Text, Review title): 단어수
 
 - Readability: FOG or FRE
-
-- Sentiment: BERT모델을 통한 pre-train 모델 혹은 감정의 원주율 모델 사용 논의 후 결정 : **필규 희령** 
 
 - Breadth : 토픽모델링 후 진행
 
