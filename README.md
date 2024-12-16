@@ -1,5 +1,5 @@
 # PADA_LAB
-![제목을-입력해주세요_-001 (1)](https://github.com/user-attachments/assets/35685bcc-e06f-445e-b45d-428e643349c8){: width="100" height="50"}
+<img src="https://github.com/user-attachments/assets/35685bcc-e06f-445e-b45d-428e643349c8" alt="제목을 입력해주세요" width="300" height="270">
 
 
 ## DATA Preprocessing git
