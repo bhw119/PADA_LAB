@@ -5,20 +5,35 @@ import pandas as pd
 from tqdm import tqdm
 import os
 from collections import Counter
+from transformers import AutoModelForSequenceClassification
 
 
 class SentimentAnalyzer:
-    def __init__(self):
+    def __init__(self, model_path=None):
         device = "mps" if torch.backends.mps.is_available() else "cpu"
-        self.model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
-        self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        self.classifier = pipeline(
-            "sentiment-analysis",
-            model=self.model_name,
-            tokenizer=self.tokenizer,
-            return_all_scores=True,
-            device=device
-        )
+
+        if model_path:
+            # 파인튜닝된 모델 사용
+            self.model_name = model_path
+            self.tokenizer = AutoTokenizer.from_pretrained(model_path)
+            self.classifier = pipeline(
+                "sentiment-analysis",
+                model=model_path,
+                tokenizer=self.tokenizer,
+                top_k=None,
+                device=device
+            )
+        else:
+            # 기존 코드 유지 (기본 모델)
+            self.model_name = "nlptown/bert-base-multilingual-uncased-sentiment"
+            self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
+            self.classifier = pipeline(
+                "sentiment-analysis",
+                model=self.model_name,
+                tokenizer=self.tokenizer,
+                top_k=None,
+                device=device
+            )
 
     def get_sentiments(self, text):
         """연속형과 이산형 점수 모두 반환"""
@@ -172,11 +187,16 @@ if __name__ == "__main__":
     # 분석기 초기화
     analyzer = SentimentAnalyzer()
 
-    df = analyzer.process_file(
-        file_path='cs_reviews.csv',
-        text_column='review_text',
-        batch_size=1500
-    )
+
+    # df = analyzer.process_file(
+    #     file_path='cs_reviews.csv',
+    #     text_column='review_text',
+    #     batch_size=1500
+    # )
+
+    text = "Really valuble course thank you"
+    a, b, c, d = analyzer.analyze_long_text(text)
+    print(a, b, c, d)
 
     # 리소스 해제
     del analyzer.classifier

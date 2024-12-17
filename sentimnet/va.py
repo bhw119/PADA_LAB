@@ -127,10 +127,11 @@ text = "The course is well paced and they get you comfortable with the topics ev
 text2 = "Information was well organized, easy to learn, and study. with frequent note writing, and some breaks . You can learn a good brief summary of what's to come, and what to research more in the future."
 text3 = "A lot of explanations not provided! Too many peer-graded assignments, really disappointed!"
 
-va_scorer = va_scorer('Lexicon.txt')
+va_scorer = va_scorer('Bipolar_Lexicon.txt')
 p_a, p_d, n_a, n_d = va_scorer.get_sentiment_scores(text, 0.5, 0.5)
 print(p_a, p_d, n_a, n_d)
 va_scorer.print_each_score(text)
+
 # result = vad_scorer.process_text(text)
 # # 단일 단어 검색
 # word = "aardvark"
