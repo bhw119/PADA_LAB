@@ -22,6 +22,8 @@
 
 
 <details>
+
+  
 <summary>
   Readability: FOG or FRE
 </summary>
