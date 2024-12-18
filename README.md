@@ -9,6 +9,17 @@
 - **Sentiment**: BERT 모델을 통한 pre-train 모델 혹은 감정의 원주율 모델 사용 논의 후 결정 😮‍💨
 
 ### 현우, 수진
+<summary>
+  Dev_of_star_rating: 별점의 분포(극단성)
+</summary>
+<summary>
+  length: 리뷰와 리뷰 제목의 단어 수
+</summary>
+<summary>
+  time_lapsed: 리뷰가 작성된 후 얼마나 지났는가
+</summary>
+
+
 
 <details>
 <summary>
