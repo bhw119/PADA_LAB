@@ -33,7 +33,15 @@ CTM vs LDA vs LSA
 </details>
 
 - **Length (Review Text, Review title)**: 단어수
-- **Breadth**: 토픽모델링 후 진행🧐
+
+<details>
+<summary>
+**Breadth**: 토픽모델링 후 진행🧐
+</summary>
+<img width="1178" alt="image (7)" src="https://github.com/user-attachments/assets/cad0747a-9977-44ec-b45e-925d0c20f5b8" />
+
+  
+</details>
 
 <details>
 <summary>
