@@ -101,3 +101,6 @@ CTM vs LDA vs LSA
 
 - **Time lapsed**: 리뷰 수집일 - 리뷰 게시일😖
 - **Deviation of star ratings**: |리뷰의 평점 - 평균평점|😫
+
+# 사용방법
+Jupyter notebook에서 Preprocessing_code 내의 preprocessing_merged.ipynb를 실행한 후 R studio 등에서 ctm_depth_and_length.r을 실행하여 모든 feature들을 추가할 수 있음.
