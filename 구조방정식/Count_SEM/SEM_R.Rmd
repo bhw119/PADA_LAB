@@ -8,7 +8,7 @@ library(car)  # VIF 계산
 library(MASS) # Poisson 사용
 
 # 📌 데이터 불러오기
-df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/amazon_scaled.csv")
+df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/scaled_data/amazon_scaled.csv")
 
 # 📌 SEM 모델 정의
 model <- '
@@ -92,7 +92,7 @@ library(car)  # VIF 계산
 library(MASS) # Negative Binomial 사용
 
 # 📌 데이터 불러오기
-df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/amazon_scaled.csv")
+df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/scaled_data/amazon_scaled.csv")
 
 # 📌 SEM 모델 정의
 model <- '
@@ -174,7 +174,7 @@ library(semPlot)
 library(car)  # VIF 계산을 위해 추가
 
 # 데이터 불러오기
-df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/amazon_scaled.csv")
+df <- read.csv("C:/Users/Administrator/Desktop/PADA_LAB/구조방정식/Count_SEM/scaled_data/amazon_scaled.csv")
 
 # SEM 모델 정의
 model <- '
